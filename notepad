@@ -1,0 +1,41 @@
+curl 'https://publicreporting.elections.ny.gov/CandidateCommitteeDisclosure/GetFilingInventoryData/' \
+  -H 'authority: publicreporting.elections.ny.gov' \
+  -H 'accept: */*' \
+  -H 'accept-language: en,en-US;q=0.9,it;q=0.8' \
+  -H 'content-type: application/x-www-form-urlencoded; charset=UTF-8' \
+  -H 'cookie: ASP.NET_SessionId=do3swwx3jc034sjhg2qzuem1; _ga_1D6F62T597=GS1.1.1675968214.2.0.1675968214.0.0.0; _ga=GA1.1.219446391.1675964907; _ga_EY2MYK54PW=GS1.1.1676086879.7.1.1676087197.0.0.0' \
+  -H 'origin: https://publicreporting.elections.ny.gov' \
+  -H 'referer: https://publicreporting.elections.ny.gov/CandidateCommitteeDisclosure/CandidateCommitteeDisclosure' \
+  -H 'sec-ch-ua: "Not_A Brand";v="99", "Google Chrome";v="109", "Chromium";v="109"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-origin' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36' \
+  -H 'x-requested-with: XMLHttpRequest' \
+  --data-raw 'strFilerId=100&strCandidateId=-+Select+-&strCommitteeId=-+Select+-&searchBy=FILER&lstUCOfficeType=10' \
+  --compressed
+
+
+
+  curl 'https://publicreporting.elections.ny.gov/CandidateCommitteeDisclosure/GetCommitteeTypeIDVal/' \
+  -H 'authority: publicreporting.elections.ny.gov' \
+  -H 'accept: application/json, text/javascript, */*; q=0.01' \
+  -H 'accept-language: en,en-US;q=0.9,it;q=0.8' \
+  -H 'content-type: application/json' \
+  -H 'cookie: ASP.NET_SessionId=do3swwx3jc034sjhg2qzuem1; _ga_1D6F62T597=GS1.1.1675968214.2.0.1675968214.0.0.0; _ga=GA1.1.219446391.1675964907; _ga_EY2MYK54PW=GS1.1.1676086879.7.1.1676087197.0.0.0' \
+  -H 'origin: https://publicreporting.elections.ny.gov' \
+  -H 'referer: https://publicreporting.elections.ny.gov/CandidateCommitteeDisclosure/CandidateCommitteeDisclosure' \
+  -H 'sec-ch-ua: "Not_A Brand";v="99", "Google Chrome";v="109", "Chromium";v="109"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-origin' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36' \
+  -H 'x-requested-with: XMLHttpRequest' \
+  --data-raw '{"strFilingsID":"1304841"}' \
+  --compressed
+
+  

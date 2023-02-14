@@ -7,7 +7,7 @@ collections.Callable = collections.abc.Callable
 from html.parser import HTMLParser
 
 #declared variables
-cookie_input = "ASP.NET_SessionId=do3swwx3jc034sjhg2qzuem1; _ga=GA1.1.219446391.1675964907; _ga_1D6F62T597=GS1.1.1676090470.3.0.1676090470.0.0.0; _ga_EY2MYK54PW=GS1.1.1676384439.11.1.1676384445.0.0.0"
+cookie_input = "ASP.NET_SessionId=do3swwx3jc034sjhg2qzuem1; _ga=GA1.1.219446391.1675964907; _ga_1D6F62T597=GS1.1.1676090470.3.0.1676090470.0.0.0; _ga_EY2MYK54PW=GS1.1.1676401603.12.1.1676401608.0.0.0"
 
 
 #get file with Filling ID and Name 
@@ -54,18 +54,12 @@ def getFillings():
     for element in soup.findAll('div', attrs = {'class' : 'card-body'}):
         for a in element.findAll("a"):
             print(a['onclick'])
-
-setFilerID()
-getFillings()
-
-
-
-
-
-
             # fillings.append(a['onclick'])
             # print(fillings)
-            
+setFilerID()
+getFillings()     
+
+
 #     a = []
 # for i in range(5):
 #     # change a = a.append(i) to    
@@ -103,5 +97,6 @@ getFillings()
     #with open("test.txt", "w") as out_file:
     #    out_file.write(str(r.content))
 
+    
 
 
