@@ -52,16 +52,16 @@ def getFillings():
     soup = BeautifulSoup(r.content,'lxml')
     #retrieving the data that we want (includes: activity report, date, time, filling ID, & filler ID = the last element)
     for element in soup.findAll('div', attrs = {'class' : 'card-body'}):
-        #for a in element.findAll("a"):
-        #print(a['onclick'])
-        if a is not None:
-            for a in element.find("a", attrs = 'onclick'):    
-                print(a)
+        for a in element.findAll("a"):
+            print(a['onclick'])
             # fillings.append(a['onclick'])
             # print(fillings)
-            
+setFilerID()
+getFillings()    
+
+
 #     a = []
-# for i in range(5):
+#       for i in range(5):
 #     # change a = a.append(i) to    
 #     a.append(i)
 # print(a)
@@ -96,8 +96,4 @@ def getFillings():
     
     #with open("test.txt", "w") as out_file:
     #    out_file.write(str(r.content))
-
-    
-setFilerID()
-getFillings()
 
